@@ -1,4 +1,4 @@
-module csa4 (cout, sum, A, B, cin);
+module csea4 (cout, sum, A, B, cin);
 
     input [3:0] A, B;
     input cin;

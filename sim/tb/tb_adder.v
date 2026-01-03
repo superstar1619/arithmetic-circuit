@@ -9,7 +9,7 @@ module tb_adder();
     wire s_Cout, Cout;
     wire [31:0] s_Sum, Sum;
 
-    csa32 test_adder(Cout, Sum, A, B, Cin);
+    csea32 test_adder(Cout, Sum, A, B, Cin);
     adder standard_adder(s_Cout, s_Sum, A, B, Cin);
 
     initial 
