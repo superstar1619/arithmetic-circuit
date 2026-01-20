@@ -23,3 +23,13 @@ module subtractor (Cout, Sum, A, B, Subtract);
     assign {Cout, Sum} = A + w + 32'd1;
 
 endmodule
+
+module multiplier (Z, X, Y);
+
+    input [31:0] X, Y;
+
+    output [63:0] Z;
+
+    assign Z = $unsigned(X) * $unsigned(Y);
+
+endmodule
