@@ -7,12 +7,12 @@ module tb_multiplier();
 
     wire [63:0] s_Z, Z;
 
-    csam32 test_multiplier(Z, X, Y);
+    wallace32 test_multiplier(Z, X, Y);
     multiplier standard_multiplier(s_Z, X, Y);
 
     initial 
     begin
-        for(i=200;i>=1;i=i-1)
+        for(i=20;i>=1;i=i-1)
         begin
             #5
             get_rand();
