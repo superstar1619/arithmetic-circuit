@@ -9,9 +9,7 @@ module wallace32(Z, X, Y);
     wire [63:0] sum [32:3];
     wire [64:0] cout [32:3];
     wire [63:0] current [31:0];
-    // buf(current[0][63], 0);
-    // buf(current[1][62], 0);
-    // buf(current[1][63], 0);   
+    
     generate
         for (i=62; i>=31; i=i-1)
         begin : gencurrent
