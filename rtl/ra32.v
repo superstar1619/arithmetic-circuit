@@ -7,7 +7,7 @@ module ra32(Z, X, Y);
     genvar i, k;
     genvar l, m, n, t;
     
-    wire [63:0] current [100:0];
+    wire [64:0] current [100:0];
     
     generate
         for (i=62; i>=31; i=i-1)
