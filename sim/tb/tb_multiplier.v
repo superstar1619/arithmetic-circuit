@@ -12,7 +12,7 @@ module tb_multiplier();
 
     initial 
     begin
-        for(i=20;i>=1;i=i-1)
+        for(i=10000;i>=1;i=i-1)
         begin
             #5
             get_rand();
