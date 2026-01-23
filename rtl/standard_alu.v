@@ -33,3 +33,13 @@ module multiplier (Z, X, Y);
     assign Z = $unsigned(X) * $unsigned(Y);
 
 endmodule
+
+module s_multiplier (Z, X, Y);
+
+    input [31:0] X, Y;
+
+    output [63:0] Z;
+
+    assign Z = $signed(X) * $signed(Y);
+
+endmodule
