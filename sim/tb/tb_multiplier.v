@@ -7,12 +7,12 @@ module tb_multiplier();
 
     wire [63:0] s_Z, Z;
 
-    array32tc test_multiplier(Z, X, Y);
+    booth32x32 test_multiplier(Z, X, Y);
     s_multiplier standard_multiplier(s_Z, X, Y);
 
     initial 
     begin
-        for(i=20;i>=1;i=i-1)
+        for(i=1000;i>=1;i=i-1)
         begin
             #5
             get_rand();
