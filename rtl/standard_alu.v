@@ -43,3 +43,28 @@ module s_multiplier (Z, X, Y);
     assign Z = $signed(X) * $signed(Y);
 
 endmodule
+
+
+module divider (Q, R, X, Y);
+
+    input [31:0] X, Y;
+
+    output [31:0] Q, R;
+
+    assign Q = $unsigned(X) / $unsigned(Y);
+
+    assign R = $unsigned(X) % $unsigned(Y);
+
+endmodule
+
+module s_divider (Q, R, X, Y);
+
+    input [31:0] X, Y;
+
+    output [31:0] Q, R;
+
+    assign Q = $signed(X) / $signed(Y);
+
+    assign R = $signed(X) % $signed(Y);
+
+endmodule
